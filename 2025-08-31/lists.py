@@ -12,7 +12,7 @@ my_list = [a, b, c, d]
 #print("After removal:")
 #print(my_list)
 
-print("Printing length of list:")
+print("Printing length of lists:")
 print(len(my_list))
 
 print("Printing element by traversing manually:")
