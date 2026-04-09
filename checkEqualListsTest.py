@@ -5,14 +5,14 @@ from checkEqualLists import checkEqualList
 
 
 @pytest.mark.parametrize("list1, list2, expected", [
-    ("1 2 3 4 5", "1 2 3 4 5", "equal"),
-    ("1 1 1 1 1", "1 2 3 4 5", "not equal"),
-    ("1", "1 2", "not equal"),
-    ("1", "1 1", "not equal"),
-    ("1 2 3", " ", "not equal"),
-    (" ", "1 2 3", "not equal"),
-    ("1 2 3 4", "1 2 3 5", "not equal"),
-    ("5 4 3 2 1 ", "6 4 3 2 1", "not equal")
+    ("1 2 3 4 5", "1 2 3 4 5", True),
+    ("1 1 1 1 1", "1 2 3 4 5", False),
+    ("1", "1 2", False),
+    ("1", "1 1", False),
+    ("1 2 3", " ", False),
+    (" ", "1 2 3", False),
+    ("1 2 3 4", "1 2 3 5", False),
+    ("5 4 3 2 1 ", "6 4 3 2 1", False)
 ])
 def test_countCharacters(list1, list2, expected):
     assert checkEqualList(list1, list2) == expected
