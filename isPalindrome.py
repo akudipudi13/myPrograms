@@ -1,8 +1,9 @@
-def checkPali(String):
-    length = len(String)
+def checkPalindrome(strInput):
+    length = len(strInput)
     for i in range(length%2):
-        if String[i] != String[length - (i + 1)]:
+        if strInput[i] != strInput[length - (i + 1)]:
             return False
     return True
 
-String = input("String: ")
+strInput = input("String:")
+print(checkPalindrome(strInput))
