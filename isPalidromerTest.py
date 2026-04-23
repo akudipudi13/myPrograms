@@ -9,7 +9,7 @@ from isPalindrome import checkPalindrome
     (" ", True),
     ("Hello World", False),
     ("Hello olleH", True),
-     ("H", True)
+    ("H", True)
 
 
 ])

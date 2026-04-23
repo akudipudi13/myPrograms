@@ -5,5 +5,5 @@ def checkPalindrome(strInput):
             return False
     return True
 
-strInput = input("String:")
+strInput = input("String: ")
 print(checkPalindrome(strInput))
